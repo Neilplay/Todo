@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .app-container {
+  background: #333;
+  color: white;
+}
+
+.dark-mode h2 {
+  color: white;
+}
+
+h2 {
+  color: #333;
+}
+
+.dark-mode input {
+  background: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+input {
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.dark-mode button {
+  background: #666;
+  color: white;
+  border: none;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+}
+
+.dark-mode button:hover {
+  background: #888;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.todo-container {
+  margin-top: 20px;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.dark-mode li {
+  background: #444;
+}
+
+li span {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+li button {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode button {
+  background: #666;
+  color: white;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #444;
+  color: white;
+  border: none;
+}
+
+.dark-mode .theme-toggle {
+  background: #f4f4f4;
+  color: black;
+}
